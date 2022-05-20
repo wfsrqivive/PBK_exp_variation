@@ -55,7 +55,7 @@ model <- function (pars, tout, state, dosing){#input required for the solver
       CLmet = (CLint/fuhep)*SF*Vli*60/1000
       
       
-      Cliverfree = Cliver*fup #/Kpli		
+      Cliverfree = Cliver/Kpli*fup 		
       Ckidneyfree = Ckidney*fup
       Cplasmavenousfree = Cplasmavenous*fup
       
